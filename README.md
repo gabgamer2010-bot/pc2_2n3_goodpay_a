@@ -1,6 +1,7 @@
 Nesta aplicação Vamos utilizar, Javascript e Hmtl com projetos em Node. # 🌱 Good Pay - Plataforma de Conversão de Créditos ESG em Cashback
 
-# Victor Icoma - Desenvolvedor na Etec Sylvio de Mattos Carvalho
+# Gabriel luiz
+- Desenvolvedor na Etec Sylvio de Mattos Carvalho
 
 Bem-vindo ao repositório do projeto **Good Pay**, uma aplicação web educacional desenvolvida para praticarmos e consolidarmos conhecimentos de **HTML**, **CSS**, **JavaScript**, além de técnicas modernas de **deploy com Firebase Hosting**, **autenticação com Firebase Authentication** e **banco de dados com Firestore**.
 
