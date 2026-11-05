@@ -25,7 +25,7 @@ async function initializeLogin() {
 async function storageUsersInfo() {
     const userLoged = JSON.parse(localStorage.getItem('usuarioAtual'))
 
-    if(userLoged.photoUrl != ""){
+    if (userLoged.photoUrl != "") {
         document.getElementById("login-img").innerHTML = `<img src="${userLoged.photoUrl}" class="img-fluid rounded-start" alt="${userLoged.email}" width="100%">`
     } else {
         document.getElementById("login-img").innerHTML = `<img src="./assets/logo_claro.png" class="img-fluid rounded-start" alt="..." width="100%">`
@@ -33,5 +33,30 @@ async function storageUsersInfo() {
 
     document.getElementById("login-name").innerText = userLoged.name
     document.getElementById("login-email").innerText = userLoged.email
-    document.getElementById("login-date").innerText = Date.now()
+    document.getElementById("login-date").innerText = new Date().toLocaleDateString('pt-BR')
+    let extrato = `<ol class="list-group list-group-numbered">`
+    extrato += `<li class="list-group-item d-flex justify-content-between align-items-start">`
+    extrato += `<div class="ms-2 me-auto">`
+    extrato += `<div class="fw-bold">Subheading</div>`
+    extrato += `Content for list item`
+    extrato += `</div>`
+    extrato += `<span class="badge text-bg-primary rounded-pill">14</span>`
+    extrato += ` </li>`
+    extrato += ` <li class="list-group-item d-flex justify-content-between align-items-start">`
+    extrato += `<div class="ms-2 me-auto">`
+    extrato += `<div class="fw-bold">Subheading</div>`
+    extrato += `Content for list item`
+    extrato += `</div>`
+    extrato += `<span class="badge text-bg-primary rounded-pill">14</span>`
+    extrato += ` </li>`
+    extrato += ` <li class="list-group-item d-flex justify-content-between align-items-start">`
+    extrato += `<div class="ms-2 me-auto">`
+    extrato += `<div class="fw-bold">Subheading</div>`
+    extrato += `Content for list item`
+    extrato += `</div>`
+    extrato += `<span class="badge text-bg-primary rounded-pill">14</span>`
+    extrato += ` </li>`
+    extrato += `</ol>`
+    document.getElementById("login-extrato").innerHTML = extrato
+    console.log(extrato)
 }
